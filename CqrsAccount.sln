@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsAccount.Domain", "CqrsAccount.Domain\CqrsAccount.Domain.csproj", "{81F42DD3-EA48-4796-89D8-CF87F24102AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CqrsAccount.Domain.Tests", "CqrsAccount.Domain.Tests\CqrsAccount.Domain.Tests.csproj", "{FE4F5943-EE60-419E-A2B1-8A7387F5893B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F42DD3-EA48-4796-89D8-CF87F24102AE}.Debug|x64.ActiveCfg = Debug|x64
+		{81F42DD3-EA48-4796-89D8-CF87F24102AE}.Debug|x64.Build.0 = Debug|x64
+		{81F42DD3-EA48-4796-89D8-CF87F24102AE}.Release|x64.ActiveCfg = Release|x64
+		{81F42DD3-EA48-4796-89D8-CF87F24102AE}.Release|x64.Build.0 = Release|x64
+		{FE4F5943-EE60-419E-A2B1-8A7387F5893B}.Debug|x64.ActiveCfg = Debug|x64
+		{FE4F5943-EE60-419E-A2B1-8A7387F5893B}.Debug|x64.Build.0 = Debug|x64
+		{FE4F5943-EE60-419E-A2B1-8A7387F5893B}.Release|x64.ActiveCfg = Release|x64
+		{FE4F5943-EE60-419E-A2B1-8A7387F5893B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C55967D-DD71-4CC4-AD8F-AE3E4F8D4B30}
+	EndGlobalSection
+EndGlobal

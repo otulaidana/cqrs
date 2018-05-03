@@ -1,0 +1,1012 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "EventStore.Client/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/EventStore.ClientAPI.dll": {}
+        },
+        "runtime": {
+          "lib/net40/EventStore.ClientAPI.dll": {}
+        }
+      },
+      "EventStore.Client.Embedded/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "EventStore.Client": "[4.1.0]"
+        },
+        "compile": {
+          "lib/net40/EventStore.ClientAPI.Embedded.dll": {}
+        },
+        "runtime": {
+          "lib/net40/EventStore.ClientAPI.Embedded.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.CSharp/4.4.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Newtonsoft.Json/10.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NodaTime/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NodaTime.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NodaTime.dll": {}
+        }
+      },
+      "ReactiveDomain.Core/0.8.15": {
+        "type": "package",
+        "compile": {
+          "lib/net462/ReactiveDomain.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ReactiveDomain.Core.dll": {}
+        }
+      },
+      "ReactiveDomain.Foundation/0.8.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1",
+          "Newtonsoft.Json": "10.0.3",
+          "ReactiveDomain.Messaging": "0.8.15",
+          "ReactiveDomain.Persistence": "0.8.15",
+          "reactiveui": "7.4.0",
+          "xunit.core": "2.3.1"
+        },
+        "frameworkAssemblies": [
+          "PresentationFramework"
+        ],
+        "compile": {
+          "lib/net462/ReactiveDomain.Foundation.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ReactiveDomain.Foundation.dll": {}
+        }
+      },
+      "ReactiveDomain.Messaging/0.8.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1",
+          "Newtonsoft.Json": "10.0.3",
+          "ReactiveDomain.Core": "0.8.15"
+        },
+        "compile": {
+          "lib/net462/ReactiveDomain.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ReactiveDomain.Messaging.dll": {}
+        }
+      },
+      "ReactiveDomain.Persistence/0.8.15": {
+        "type": "package",
+        "dependencies": {
+          "EventStore.Client": "4.1.0",
+          "EventStore.Client.Embedded": "4.1.0",
+          "Microsoft.CSharp": "4.4.1",
+          "Newtonsoft.Json": "10.0.3",
+          "ReactiveDomain.Core": "0.8.15"
+        },
+        "compile": {
+          "lib/net462/ReactiveDomain.Persistence.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ReactiveDomain.Persistence.dll": {}
+        }
+      },
+      "reactiveui/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "reactiveui-core": "[7.4.0]"
+        }
+      },
+      "reactiveui-core/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Main": "2.2.5",
+          "Rx-Xaml": "2.2.5",
+          "Splat": "[1.4.0, 2.0.0)"
+        },
+        "compile": {
+          "lib/Net45/ReactiveUI.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/ReactiveUI.dll": {}
+        }
+      },
+      "Rx-Core/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/net45/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Core.dll": {}
+        }
+      },
+      "Rx-Interfaces/2.2.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "Rx-Linq/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/net45/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Linq.dll": {}
+        }
+      },
+      "Rx-Main/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5",
+          "Rx-Linq": "2.2.5",
+          "Rx-PlatformServices": "2.2.5"
+        }
+      },
+      "Rx-PlatformServices/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Core": "2.2.5",
+          "Rx-Interfaces": "2.2.5"
+        },
+        "compile": {
+          "lib/net45/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "Rx-XAML/2.2.5": {
+        "type": "package",
+        "dependencies": {
+          "Rx-Main": "2.2.5"
+        },
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        }
+      },
+      "Splat/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/Splat.dll": {}
+        }
+      },
+      "System.Reactive/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1",
+          "System.Reactive.Windows.Threading": "3.1.1"
+        }
+      },
+      "System.Reactive.Core/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Interfaces": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Core.dll": {}
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Interfaces.dll": {}
+        }
+      },
+      "System.Reactive.Linq/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.Linq.dll": {}
+        }
+      },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "compile": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Reactive.PlatformServices.dll": {}
+        }
+      },
+      "System.Reactive.Windows.Threading/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1"
+        },
+        "frameworkAssemblies": [
+          "System.Windows",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Reactive.Windows.Threading.dll": {}
+        }
+      },
+      "xunit.abstractions/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net35/xunit.abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net35/xunit.abstractions.dll": {}
+        }
+      },
+      "xunit.core/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.3.1]",
+          "xunit.extensibility.execution": "[2.3.1]"
+        },
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        }
+      },
+      "xunit.extensibility.core/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "xunit.abstractions": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {}
+        }
+      },
+      "xunit.extensibility.execution/2.3.1": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.3.1]"
+        },
+        "compile": {
+          "lib/net452/xunit.execution.desktop.dll": {}
+        },
+        "runtime": {
+          "lib/net452/xunit.execution.desktop.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventStore.Client/4.1.0": {
+      "sha512": "D2A7DsyJLe4uf4RInf1fXksvBuHAGJM0XYLvPfNpdh6kFxOkYSTkTNFKTtyojpmfH1TH/nmxVE5ZMX0hpI1ONg==",
+      "type": "package",
+      "path": "eventstore.client/4.1.0",
+      "files": [
+        "eventstore.client.4.1.0.nupkg.sha512",
+        "eventstore.client.nuspec",
+        "lib/net40/EventStore.ClientAPI.dll",
+        "lib/net40/EventStore.ClientAPI.xml"
+      ]
+    },
+    "EventStore.Client.Embedded/4.1.0": {
+      "sha512": "3qekFghw07xzqj/RK4G5L75mxnJ0QqyPrBEXFPRh/sFP63hfTZLlQR3hFTGX0ZbbluzADS/xtCi7a3N1lYnYBw==",
+      "type": "package",
+      "path": "eventstore.client.embedded/4.1.0",
+      "files": [
+        "Prelude/1Prelude.js",
+        "Prelude/Modules.js",
+        "Prelude/ModulesExecuted.js",
+        "Prelude/Projections.js",
+        "build/EventStore.Client.Embedded.targets",
+        "eventstore.client.embedded.4.1.0.nupkg.sha512",
+        "eventstore.client.embedded.nuspec",
+        "lib/net40/EventStore.ClientAPI.Embedded.dll",
+        "lib/net40/EventStore.ClientAPI.Embedded.xml",
+        "native/x64/win/js1.dll"
+      ]
+    },
+    "Microsoft.CSharp/4.4.1": {
+      "sha512": "A5hI3gk6WpcBI0QGZY6/d5CCaYUxJgi7iENn1uYEng+Olo8RfI5ReGVkjXjeu3VR3srLvVYREATXa2M0X7FYJA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.4.1",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.4.1.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Newtonsoft.Json/10.0.3": {
+      "sha512": "hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "type": "package",
+      "path": "newtonsoft.json/10.0.3",
+      "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.10.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "NodaTime/2.2.5": {
+      "sha512": "xWTeEarjcwtLdvdYYVVWCHX01xxUEKiCGJ8FWoqLx5FxVGuHadeSDLYw/bj8bEK+/4tEdeivI/HMZfunCkGp8w==",
+      "type": "package",
+      "path": "nodatime/2.2.5",
+      "files": [
+        "lib/net45/NodaTime.dll",
+        "lib/net45/NodaTime.pdb",
+        "lib/net45/NodaTime.xml",
+        "lib/netstandard1.3/NodaTime.dll",
+        "lib/netstandard1.3/NodaTime.pdb",
+        "lib/netstandard1.3/NodaTime.xml",
+        "nodatime.2.2.5.nupkg.sha512",
+        "nodatime.nuspec"
+      ]
+    },
+    "ReactiveDomain.Core/0.8.15": {
+      "sha512": "F6Z9IW+P1WpduHMl41USucmYa/8RHL6+CyBgvI01yOhXMXuWS3oo5SACiSbQvRCb72Em+y3p9kQuDLJK57yQTw==",
+      "type": "package",
+      "path": "reactivedomain.core/0.8.15",
+      "files": [
+        "lib/net452/ReactiveDomain.Core.dll",
+        "lib/net462/ReactiveDomain.Core.dll",
+        "lib/netstandard2.0/ReactiveDomain.Core.dll",
+        "reactivedomain.core.0.8.15.nupkg.sha512",
+        "reactivedomain.core.nuspec"
+      ]
+    },
+    "ReactiveDomain.Foundation/0.8.15": {
+      "sha512": "oM4Vz+Xo+XGratxvq0fi4/l0XLcUiBESdAotcRgtLHKEO8JC5KnN6hekvFb1u59HIvWYKnaodEqnNh/+lBDyfA==",
+      "type": "package",
+      "path": "reactivedomain.foundation/0.8.15",
+      "files": [
+        "lib/net452/ReactiveDomain.Foundation.dll",
+        "lib/net462/ReactiveDomain.Foundation.dll",
+        "lib/netstandard2.0/ReactiveDomain.Foundation.dll",
+        "reactivedomain.foundation.0.8.15.nupkg.sha512",
+        "reactivedomain.foundation.nuspec"
+      ]
+    },
+    "ReactiveDomain.Messaging/0.8.15": {
+      "sha512": "8X1UhYDgZVl8zfgTIsryzN+assiihDcPU+g5hO2eFj8jSqDoIlMYQDSFU22hoVcsHkkG3LmLH4S/X2kG9tmvlg==",
+      "type": "package",
+      "path": "reactivedomain.messaging/0.8.15",
+      "files": [
+        "lib/net452/ReactiveDomain.Messaging.dll",
+        "lib/net462/ReactiveDomain.Messaging.dll",
+        "lib/netstandard2.0/ReactiveDomain.Messaging.dll",
+        "reactivedomain.messaging.0.8.15.nupkg.sha512",
+        "reactivedomain.messaging.nuspec"
+      ]
+    },
+    "ReactiveDomain.Persistence/0.8.15": {
+      "sha512": "HmaRZiPG+hUCfC1oZ1r05ndx7P9rCkHc9efpuLJ3gKqm4lv+ewIS85PunBOGC2mLS3D+eDhnnEnpSrwNyP1eNQ==",
+      "type": "package",
+      "path": "reactivedomain.persistence/0.8.15",
+      "files": [
+        "lib/net452/ReactiveDomain.Persistence.dll",
+        "lib/net462/ReactiveDomain.Persistence.dll",
+        "lib/netstandard2.0/ReactiveDomain.Persistence.dll",
+        "reactivedomain.persistence.0.8.15.nupkg.sha512",
+        "reactivedomain.persistence.nuspec"
+      ]
+    },
+    "reactiveui/7.4.0": {
+      "sha512": "ut/4fezqMH3mzkI/SUzmxnYLj8tDwi9NZ8RmLfaEwhmQ7OELBNhsVZqQrG+Hqc1yr1mfPoTW0vyIbQSicLHjuA==",
+      "type": "package",
+      "path": "reactiveui/7.4.0",
+      "files": [
+        "LICENSE",
+        "reactiveui.7.4.0.nupkg.sha512",
+        "reactiveui.nuspec"
+      ]
+    },
+    "reactiveui-core/7.4.0": {
+      "sha512": "BseZIvDK1MFYjBZ18mZvQJ5hhYz/yZ1U0cs7WG0VVvE37b6PEN9kSS6bPdg+K8N0JFj8AHespHtfup4cEOgyaw==",
+      "type": "package",
+      "path": "reactiveui-core/7.4.0",
+      "files": [
+        "lib/MonoAndroid403/ReactiveUI.dll",
+        "lib/MonoAndroid403/ReactiveUI.pdb",
+        "lib/MonoAndroid403/ReactiveUI.xml",
+        "lib/Net45/ReactiveUI.dll",
+        "lib/Net45/ReactiveUI.pdb",
+        "lib/Net45/ReactiveUI.xml",
+        "lib/Portable-Win81+Wpa81/ReactiveUI.dll",
+        "lib/Portable-Win81+Wpa81/ReactiveUI.pdb",
+        "lib/Portable-Win81+Wpa81/ReactiveUI.xml",
+        "lib/UAP10/ReactiveUI.dll",
+        "lib/UAP10/ReactiveUI.pdb",
+        "lib/UAP10/ReactiveUI.xml",
+        "lib/Xamarin.Mac20/ReactiveUI.dll",
+        "lib/Xamarin.Mac20/ReactiveUI.pdb",
+        "lib/Xamarin.Mac20/ReactiveUI.xml",
+        "lib/Xamarin.iOS10/ReactiveUI.dll",
+        "lib/Xamarin.iOS10/ReactiveUI.pdb",
+        "lib/Xamarin.iOS10/ReactiveUI.xml",
+        "lib/portable-net45+netcore45+wpa81+win8+wp8+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10/ReactiveUI.dll",
+        "lib/portable-net45+netcore45+wpa81+win8+wp8+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10/ReactiveUI.pdb",
+        "lib/portable-net45+netcore45+wpa81+win8+wp8+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10/ReactiveUI.xml",
+        "reactiveui-core.7.4.0.nupkg.sha512",
+        "reactiveui-core.nuspec",
+        "src/Activation.cs",
+        "src/AutoPersistHelper.cs",
+        "src/BindingTypeConverters.cs",
+        "src/CollectionDebugView.cs",
+        "src/CommandBinding.cs",
+        "src/CompatMixins.cs",
+        "src/ConsoleStub.cs",
+        "src/ContractStubs.cs",
+        "src/CreatesCommandBinding.cs",
+        "src/DisposableMixins.cs",
+        "src/ExpressionMixins.cs",
+        "src/ExpressionRewriter.cs",
+        "src/IDependencyResolver.cs",
+        "src/INPCObservableForProperty.cs",
+        "src/IROObservableForProperty.cs",
+        "src/IReactiveObject.cs",
+        "src/Interactions.cs",
+        "src/Interfaces.cs",
+        "src/LoggingMixins.cs",
+        "src/MessageBus.cs",
+        "src/ObservableAsPropertyHelper.cs",
+        "src/Observables.cs",
+        "src/ObservedChangedMixin.cs",
+        "src/OrderedComparer.cs",
+        "src/POCOObservableForProperty.cs",
+        "src/PortableLibraryStubs.cs",
+        "src/PropertyBinding.cs",
+        "src/ReactiveBinding.cs",
+        "src/ReactiveCollectionMixins.cs",
+        "src/ReactiveCommand.cs",
+        "src/ReactiveList.cs",
+        "src/ReactiveNotifyPropertyChangedMixin.cs",
+        "src/ReactiveObject.cs",
+        "src/RefcountDisposeWrapper.cs",
+        "src/Reflection.cs",
+        "src/RegisterableInterfaces.cs",
+        "src/Registrations.cs",
+        "src/RoutableViewModelMixin.cs",
+        "src/RoutingState.cs",
+        "src/RxApp.cs",
+        "src/ScheduledSubject.cs",
+        "src/SuspensionHost.cs",
+        "src/UnhandledErrorException.cs",
+        "src/VariadicTemplates.cs",
+        "src/ViewAttributes.cs",
+        "src/ViewLocator.cs",
+        "src/WaitForDispatcherScheduler.cs",
+        "src/WeakEventManager.cs"
+      ]
+    },
+    "Rx-Core/2.2.5": {
+      "sha512": "DfWVTfW6tvRkkqpnRHKxPIvaRZyDJGADuqrE6J2nwejOQbLRWi0rNUwXkViDWz++25BGDy3iRE5OE6Dv8mJxYQ==",
+      "type": "package",
+      "path": "rx-core/2.2.5",
+      "files": [
+        "lib/net40/System.Reactive.Core.XML",
+        "lib/net40/System.Reactive.Core.dll",
+        "lib/net45/System.Reactive.Core.XML",
+        "lib/net45/System.Reactive.Core.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Core.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Core.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Core.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Core.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Core.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Core.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Core.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Core.dll",
+        "lib/sl5/System.Reactive.Core.XML",
+        "lib/sl5/System.Reactive.Core.dll",
+        "lib/windows8/System.Reactive.Core.XML",
+        "lib/windows8/System.Reactive.Core.dll",
+        "lib/windowsphone71/System.Reactive.Core.XML",
+        "lib/windowsphone71/System.Reactive.Core.dll",
+        "lib/windowsphone8/System.Reactive.Core.XML",
+        "lib/windowsphone8/System.Reactive.Core.dll",
+        "rx-core.2.2.5.nupkg.sha512",
+        "rx-core.nuspec"
+      ]
+    },
+    "Rx-Interfaces/2.2.5": {
+      "sha512": "FKtG2QfMIeUcfB7r3a89VoAiszX3DTvYETkpC6U0FzWpxRK/mcHyzYOsniDfag+NsDG0P1k1c8yNSefXKp3t2A==",
+      "type": "package",
+      "path": "rx-interfaces/2.2.5",
+      "files": [
+        "lib/net40/System.Reactive.Interfaces.XML",
+        "lib/net40/System.Reactive.Interfaces.dll",
+        "lib/net45/System.Reactive.Interfaces.XML",
+        "lib/net45/System.Reactive.Interfaces.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Interfaces.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Interfaces.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Interfaces.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Interfaces.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Interfaces.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Interfaces.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Interfaces.dll",
+        "lib/sl5/System.Reactive.Interfaces.XML",
+        "lib/sl5/System.Reactive.Interfaces.dll",
+        "lib/windows8/System.Reactive.Interfaces.XML",
+        "lib/windows8/System.Reactive.Interfaces.dll",
+        "lib/windowsphone71/System.Reactive.Interfaces.XML",
+        "lib/windowsphone71/System.Reactive.Interfaces.dll",
+        "lib/windowsphone8/System.Reactive.Interfaces.XML",
+        "lib/windowsphone8/System.Reactive.Interfaces.dll",
+        "rx-interfaces.2.2.5.nupkg.sha512",
+        "rx-interfaces.nuspec"
+      ]
+    },
+    "Rx-Linq/2.2.5": {
+      "sha512": "UTeCIu3cWPExxmTzdiVq7SalqTBhUaomBTaAC9LpYPoAopjlFwA3hjVWXoLkGlDc/44wqJemJuEwFP00KphiFg==",
+      "type": "package",
+      "path": "rx-linq/2.2.5",
+      "files": [
+        "lib/net40/System.Reactive.Linq.XML",
+        "lib/net40/System.Reactive.Linq.dll",
+        "lib/net45/System.Reactive.Linq.XML",
+        "lib/net45/System.Reactive.Linq.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Linq.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.Linq.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Linq.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.Linq.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Linq.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Linq.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Linq.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.Linq.dll",
+        "lib/sl5/System.Reactive.Linq.XML",
+        "lib/sl5/System.Reactive.Linq.dll",
+        "lib/windows8/System.Reactive.Linq.XML",
+        "lib/windows8/System.Reactive.Linq.dll",
+        "lib/windowsphone71/System.Reactive.Linq.XML",
+        "lib/windowsphone71/System.Reactive.Linq.dll",
+        "lib/windowsphone8/System.Reactive.Linq.XML",
+        "lib/windowsphone8/System.Reactive.Linq.dll",
+        "rx-linq.2.2.5.nupkg.sha512",
+        "rx-linq.nuspec"
+      ]
+    },
+    "Rx-Main/2.2.5": {
+      "sha512": "qdQ6qENEiLsp/LRdzZlLlodihWN8VDjwNfWa8c2ELjEHZgTdKzt1V4i61gkHVtFKZXe8Px6KupbMP3pZ+1tusQ==",
+      "type": "package",
+      "path": "rx-main/2.2.5",
+      "files": [
+        "rx-main.2.2.5.nupkg.sha512",
+        "rx-main.nuspec"
+      ]
+    },
+    "Rx-PlatformServices/2.2.5": {
+      "sha512": "pMnNEvJVjT+wuDib+W/bi5hhIYcre7dW5yxvKrJxnR4iKJ1VLA/dY2FTtjDriHGx7OeGn12lQewXlH2oHiWFPA==",
+      "type": "package",
+      "path": "rx-platformservices/2.2.5",
+      "files": [
+        "lib/net40/System.Reactive.PlatformServices.XML",
+        "lib/net40/System.Reactive.PlatformServices.dll",
+        "lib/net45/System.Reactive.PlatformServices.XML",
+        "lib/net45/System.Reactive.PlatformServices.dll",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.PlatformServices.XML",
+        "lib/portable-net40+sl5+win8+wp8/System.Reactive.PlatformServices.dll",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.PlatformServices.XML",
+        "lib/portable-net45+winrt45+wp8+wpa81/System.Reactive.PlatformServices.dll",
+        "lib/portable-win81+wpa81/System.Reactive.PlatformServices.XML",
+        "lib/portable-win81+wpa81/System.Reactive.PlatformServices.dll",
+        "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.XML",
+        "lib/portable-windows8+net45+wp8/System.Reactive.PlatformServices.dll",
+        "lib/sl5/System.Reactive.PlatformServices.XML",
+        "lib/sl5/System.Reactive.PlatformServices.dll",
+        "lib/windows8/System.Reactive.PlatformServices.XML",
+        "lib/windows8/System.Reactive.PlatformServices.dll",
+        "lib/windowsphone71/System.Reactive.PlatformServices.XML",
+        "lib/windowsphone71/System.Reactive.PlatformServices.dll",
+        "lib/windowsphone8/System.Reactive.PlatformServices.XML",
+        "lib/windowsphone8/System.Reactive.PlatformServices.dll",
+        "rx-platformservices.2.2.5.nupkg.sha512",
+        "rx-platformservices.nuspec"
+      ]
+    },
+    "Rx-XAML/2.2.5": {
+      "sha512": "RzA/HcKP1U44i7ZchRdR3v3GdepNmr/93ydyixV+LwZs++Yxo13fsODRTqGIyz11ERSIKgnnSs6tbJUys4qRSw==",
+      "type": "package",
+      "path": "rx-xaml/2.2.5",
+      "files": [
+        "lib/net40/System.Reactive.Windows.Threading.XML",
+        "lib/net40/System.Reactive.Windows.Threading.dll",
+        "lib/net45/System.Reactive.Windows.Threading.XML",
+        "lib/net45/System.Reactive.Windows.Threading.dll",
+        "lib/portable-win81+wpa81/System.Reactive.Windows.Threading.XML",
+        "lib/portable-win81+wpa81/System.Reactive.Windows.Threading.dll",
+        "lib/sl5/System.Reactive.Windows.Threading.XML",
+        "lib/sl5/System.Reactive.Windows.Threading.dll",
+        "lib/windows8/System.Reactive.Windows.Threading.XML",
+        "lib/windows8/System.Reactive.Windows.Threading.dll",
+        "lib/windowsphone71/System.Reactive.Windows.Threading.XML",
+        "lib/windowsphone71/System.Reactive.Windows.Threading.dll",
+        "lib/windowsphone8/System.Reactive.Windows.Threading.XML",
+        "lib/windowsphone8/System.Reactive.Windows.Threading.dll",
+        "rx-xaml.2.2.5.nupkg.sha512",
+        "rx-xaml.nuspec"
+      ]
+    },
+    "Splat/1.4.0": {
+      "sha512": "F2crrxugiQOigrFIhLkgsCsar3k9ZCBYKd845qnskj51A6EsTQdlE8OQ0uakpm+HThYp/sKnvJ6HdotGPeo6hg==",
+      "type": "package",
+      "path": "splat/1.4.0",
+      "files": [
+        "lib/MonoMac/Splat.dll",
+        "lib/MonoMac/Splat.dll.mdb",
+        "lib/Net45/Splat.dll",
+        "lib/Net45/Splat.pdb",
+        "lib/NetCore45/Splat.dll",
+        "lib/NetCore45/Splat.pdb",
+        "lib/NetCore45/Splat.pri",
+        "lib/Portable-Win81+Wpa81/Splat.dll",
+        "lib/Portable-Win81+Wpa81/Splat.pri",
+        "lib/Portable-net45+win+wpa81+wp80/Splat.dll",
+        "lib/monoandroid/Splat.dll",
+        "lib/monoandroid/Splat.dll.mdb",
+        "lib/monotouch/Splat.dll",
+        "lib/monotouch/Splat.dll.mdb",
+        "lib/wp8/Splat.dll",
+        "lib/wp8/Splat.pdb",
+        "splat.1.4.0.nupkg.sha512",
+        "splat.nuspec"
+      ]
+    },
+    "System.Reactive/3.1.1": {
+      "sha512": "elkQdVQoBVX39BHrYHMc3Rnbb7a9qBJIwNCvhq1psPMOEPo62/VHB0lJu671x3fOrGL4V/85n6p2Az1tw7Kvmg==",
+      "type": "package",
+      "path": "system.reactive/3.1.1",
+      "files": [
+        "system.reactive.3.1.1.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.Reactive.Core/3.1.1": {
+      "sha512": "CKWC+UP1aM75taNX+sTBn2P97uHIUjKxq+z45iy7P91QGFqNFleR2tsqIC76HMVvYl7o8oWyMiycdsc9rC1Z/g==",
+      "type": "package",
+      "path": "system.reactive.core/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Core.dll",
+        "lib/net45/System.Reactive.Core.xml",
+        "lib/net46/System.Reactive.Core.dll",
+        "lib/net46/System.Reactive.Core.xml",
+        "lib/netcore451/System.Reactive.Core.dll",
+        "lib/netcore451/System.Reactive.Core.xml",
+        "lib/netcoreapp1.0/System.Reactive.Core.dll",
+        "lib/netcoreapp1.0/System.Reactive.Core.xml",
+        "lib/netstandard1.0/System.Reactive.Core.dll",
+        "lib/netstandard1.0/System.Reactive.Core.xml",
+        "lib/netstandard1.1/System.Reactive.Core.dll",
+        "lib/netstandard1.1/System.Reactive.Core.xml",
+        "lib/netstandard1.3/System.Reactive.Core.dll",
+        "lib/netstandard1.3/System.Reactive.Core.xml",
+        "lib/uap10.0/System.Reactive.Core.dll",
+        "lib/uap10.0/System.Reactive.Core.xml",
+        "lib/wpa81/System.Reactive.Core.dll",
+        "lib/wpa81/System.Reactive.Core.xml",
+        "system.reactive.core.3.1.1.nupkg.sha512",
+        "system.reactive.core.nuspec"
+      ]
+    },
+    "System.Reactive.Interfaces/3.1.1": {
+      "sha512": "aNVY3QoRznGFeQ+w+bMqhD8ElNWoyYq+7XTQIoxKKjBOyTOjUqIMEf1wvSdtwC4y92zg2W9q38b4Sr6cYNHVLg==",
+      "type": "package",
+      "path": "system.reactive.interfaces/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Interfaces.dll",
+        "lib/net45/System.Reactive.Interfaces.xml",
+        "lib/netstandard1.0/System.Reactive.Interfaces.dll",
+        "lib/netstandard1.0/System.Reactive.Interfaces.xml",
+        "system.reactive.interfaces.3.1.1.nupkg.sha512",
+        "system.reactive.interfaces.nuspec"
+      ]
+    },
+    "System.Reactive.Linq/3.1.1": {
+      "sha512": "HwsZsoYRg51cLGBOEa0uoZ5+d4CMcHEg/KrbqePhLxoz/SLA+ULISphBtn3woABPATOQ6j5YgGZWh4jxnJ3KYQ==",
+      "type": "package",
+      "path": "system.reactive.linq/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Linq.dll",
+        "lib/net45/System.Reactive.Linq.xml",
+        "lib/net46/System.Reactive.Linq.dll",
+        "lib/net46/System.Reactive.Linq.xml",
+        "lib/netstandard1.0/System.Reactive.Linq.dll",
+        "lib/netstandard1.0/System.Reactive.Linq.xml",
+        "lib/netstandard1.1/System.Reactive.Linq.dll",
+        "lib/netstandard1.1/System.Reactive.Linq.xml",
+        "lib/netstandard1.3/System.Reactive.Linq.dll",
+        "lib/netstandard1.3/System.Reactive.Linq.xml",
+        "system.reactive.linq.3.1.1.nupkg.sha512",
+        "system.reactive.linq.nuspec"
+      ]
+    },
+    "System.Reactive.PlatformServices/3.1.1": {
+      "sha512": "jCJ3iGDLb4duOxZ/Uo3O7PssWE48uRp0fw92AlIwrMNaZRUmZNkZyqbl0nUT+joFARBYun8XiVIDQreMJKBedA==",
+      "type": "package",
+      "path": "system.reactive.platformservices/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.PlatformServices.dll",
+        "lib/net45/System.Reactive.PlatformServices.xml",
+        "lib/net46/System.Reactive.PlatformServices.dll",
+        "lib/net46/System.Reactive.PlatformServices.xml",
+        "lib/netcore451/System.Reactive.PlatformServices.dll",
+        "lib/netcore451/System.Reactive.PlatformServices.xml",
+        "lib/netcoreapp1.0/System.Reactive.PlatformServices.dll",
+        "lib/netcoreapp1.0/System.Reactive.PlatformServices.xml",
+        "lib/netstandard1.0/System.Reactive.PlatformServices.dll",
+        "lib/netstandard1.0/System.Reactive.PlatformServices.xml",
+        "lib/netstandard1.3/System.Reactive.PlatformServices.dll",
+        "lib/netstandard1.3/System.Reactive.PlatformServices.xml",
+        "lib/uap10.0/System.Reactive.PlatformServices.dll",
+        "lib/uap10.0/System.Reactive.PlatformServices.xml",
+        "lib/wpa81/System.Reactive.PlatformServices.dll",
+        "lib/wpa81/System.Reactive.PlatformServices.xml",
+        "system.reactive.platformservices.3.1.1.nupkg.sha512",
+        "system.reactive.platformservices.nuspec"
+      ]
+    },
+    "System.Reactive.Windows.Threading/3.1.1": {
+      "sha512": "y1TtaYaFKJBH0L3wbLVCV2Le5cNIyVczwZAULboPyFdKTIiRb7OGAZYigly8SjNC3NHwzrTHcF8WlkL0WjGUmA==",
+      "type": "package",
+      "path": "system.reactive.windows.threading/3.1.1",
+      "files": [
+        "lib/net45/System.Reactive.Windows.Threading.dll",
+        "lib/net45/System.Reactive.Windows.Threading.xml",
+        "lib/netcore451/System.Reactive.Windows.Threading.dll",
+        "lib/netcore451/System.Reactive.Windows.Threading.xml",
+        "lib/uap10.0/System.Reactive.Windows.Threading.dll",
+        "lib/uap10.0/System.Reactive.Windows.Threading.xml",
+        "lib/wpa81/System.Reactive.Windows.Threading.dll",
+        "lib/wpa81/System.Reactive.Windows.Threading.xml",
+        "system.reactive.windows.threading.3.1.1.nupkg.sha512",
+        "system.reactive.windows.threading.nuspec"
+      ]
+    },
+    "xunit.abstractions/2.0.1": {
+      "sha512": "bDm/zdG5rnRDsobKuKwrvL4HccBdC0uvT12be6fG12P3d1U7u9Wkvfoq/PM2GeyIeb0Dtcmm/7k2oaawiqQ2Dg==",
+      "type": "package",
+      "path": "xunit.abstractions/2.0.1",
+      "files": [
+        "lib/net35/xunit.abstractions.dll",
+        "lib/net35/xunit.abstractions.xml",
+        "lib/netstandard1.0/xunit.abstractions.dll",
+        "lib/netstandard1.0/xunit.abstractions.xml",
+        "xunit.abstractions.2.0.1.nupkg.sha512",
+        "xunit.abstractions.nuspec"
+      ]
+    },
+    "xunit.core/2.3.1": {
+      "sha512": "LOG4qOFuVQcjYcIuZbKeo03Uvng3lSb2gZJU9ANljwCf+PTd//iAMZS5qcJQZrjhndc4aOUlJGQy5wa0+/iZ6w==",
+      "type": "package",
+      "path": "xunit.core/2.3.1",
+      "files": [
+        "build/xunit.core.props",
+        "build/xunit.core.targets",
+        "build/xunit.execution.desktop.dll",
+        "buildMultiTargeting/xunit.core.props",
+        "buildMultiTargeting/xunit.core.targets",
+        "xunit.core.2.3.1.nupkg.sha512",
+        "xunit.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.core/2.3.1": {
+      "sha512": "1mgYqXeQfU+7zcSRW8/5Uf1jVZ5+5WELmi+BuRTh0xu/x0Q0gK0SuR3FLUF4BSd8sfZzvrRUrhWj3ltpyFxhrg==",
+      "type": "package",
+      "path": "xunit.extensibility.core/2.3.1",
+      "files": [
+        "lib/netstandard1.1/xunit.core.dll",
+        "lib/netstandard1.1/xunit.core.dll.tdnet",
+        "lib/netstandard1.1/xunit.core.xml",
+        "lib/netstandard1.1/xunit.runner.tdnet.dll",
+        "lib/netstandard1.1/xunit.runner.utility.net452.dll",
+        "xunit.extensibility.core.2.3.1.nupkg.sha512",
+        "xunit.extensibility.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.execution/2.3.1": {
+      "sha512": "i8xrHfKC5dyBWQ7I15FePzm0m8KNToBsTleCCQbOQuXRPZIvupd4nnfaCPeJuKHHe7yJ8JGtWxjIgw0ow/cMhg==",
+      "type": "package",
+      "path": "xunit.extensibility.execution/2.3.1",
+      "files": [
+        "lib/net452/xunit.execution.desktop.dll",
+        "lib/net452/xunit.execution.desktop.xml",
+        "lib/netstandard1.1/xunit.execution.dotnet.dll",
+        "lib/netstandard1.1/xunit.execution.dotnet.xml",
+        "xunit.extensibility.execution.2.3.1.nupkg.sha512",
+        "xunit.extensibility.execution.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "NodaTime >= 2.2.5",
+      "ReactiveDomain.Foundation >= 0.8.15",
+      "System.Reactive >= 3.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\otulaidana\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Temp\\git\\cqrs\\CqrsAccount.Domain\\CqrsAccount.Domain.csproj",
+      "projectName": "CqrsAccount.Domain",
+      "projectPath": "C:\\Temp\\git\\cqrs\\CqrsAccount.Domain\\CqrsAccount.Domain.csproj",
+      "packagesPath": "C:\\Users\\otulaidana\\.nuget\\packages\\",
+      "outputPath": "C:\\Temp\\git\\cqrs\\CqrsAccount.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\otulaidana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://ln1ampart01:8081/artifactory/api/nuget/nuget-release-local": {},
+        "http://ln1ampart01:8081/artifactory/api/nuget/nuget-snapshot-local": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net462": {
+        "dependencies": {
+          "NodaTime": {
+            "target": "Package",
+            "version": "[2.2.5, )"
+          },
+          "ReactiveDomain.Foundation": {
+            "target": "Package",
+            "version": "[0.8.15, )"
+          },
+          "System.Reactive": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          }
+        }
+      }
+    }
+  }
+}
