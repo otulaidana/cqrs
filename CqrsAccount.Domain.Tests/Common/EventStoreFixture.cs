@@ -6,8 +6,7 @@
     using EventStore.Core;
     using ReactiveDomain;
     using ReactiveDomain.EventStore;
-    using ReactiveDomain.Foundation;
-    using ReactiveDomain.Foundation.EventStore;
+    using ReactiveDomain.Foundation;    
 
     public class EventStoreFixture : IDisposable
     {
