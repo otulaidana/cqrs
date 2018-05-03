@@ -1,9 +1,0 @@
-C:\Temp\git\cqrs\CqrsAccount.Domain\bin\x64\Debug\netstandard2.0\CqrsAccount.Domain.deps.json
-C:\Temp\git\cqrs\CqrsAccount.Domain\bin\x64\Debug\netstandard2.0\CqrsAccount.Domain.dll
-C:\Temp\git\cqrs\CqrsAccount.Domain\bin\x64\Debug\netstandard2.0\CqrsAccount.Domain.pdb
-C:\Temp\git\cqrs\CqrsAccount.Domain\obj\x64\Debug\netstandard2.0\CqrsAccount.Domain.csprojResolveAssemblyReference.cache
-C:\Temp\git\cqrs\CqrsAccount.Domain\obj\x64\Debug\netstandard2.0\CqrsAccount.Domain.csproj.CoreCompileInputs.cache
-C:\Temp\git\cqrs\CqrsAccount.Domain\obj\x64\Debug\netstandard2.0\CqrsAccount.Domain.AssemblyInfoInputs.cache
-C:\Temp\git\cqrs\CqrsAccount.Domain\obj\x64\Debug\netstandard2.0\CqrsAccount.Domain.AssemblyInfo.cs
-C:\Temp\git\cqrs\CqrsAccount.Domain\obj\x64\Debug\netstandard2.0\CqrsAccount.Domain.dll
-C:\Temp\git\cqrs\CqrsAccount.Domain\obj\x64\Debug\netstandard2.0\CqrsAccount.Domain.pdb
